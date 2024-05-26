@@ -24,14 +24,13 @@ app.engine(
         extname: '.hbs',
     }),
 );
-app.set('view engine', 'hbs');
+        app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources\\views'));
 
 console.log('PATH: ', path.join(__dirname, 'resources\\views'));
 
 //Route init
-route(   app);
-
-       app.listen(port, () =>
-                console.log(`Example app listening on port http://localhost:${port}`),
+route(  app);
+         app.listen(port, () =>
+                       console.log(`Example app listening on port http://localhost:${port}`),
 );
